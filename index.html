@@ -29,11 +29,18 @@
         
         <h3>Covid-19</h3>
         <p>The first chart tracks Covid-19 cases by UK region.</p>
-        <div class="chart" id="Chart1"></div>
+        <div class="chart" id="Vis1"></div>
 
         <h3>Productivity puzzle</h3>
         <p>My second chart looks at productivity in the UK</p>
-        <div class="chart" id="Chart2"> </div>
+        <div class="chart" id="Vis2"> </div>
+
+    <div class="myWeek2">
+        <h1>Week 2</h1>
+        
+    <h3>IMF lending</h3>
+    <div class="chart" id="Vis3"></div>
+
     </div> 
 </body>
 
@@ -42,10 +49,12 @@
     //Define charts:
     var myChart1 = "chart1_covidUKRegions.json";
     var myChart2 = "chart2_ukProductivity.json";
+    var myChart3 = "IMFlending.json";
 
     // Embed charts:
-    vegaEmbed('#Chart1', myChart1);
-    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Vis1', myChart1);
+    vegaEmbed('#Vis2', myChart2);
+    vegaEmbed('#Vis3', myChart3);
 </script>
 
 </html>

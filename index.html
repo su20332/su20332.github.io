@@ -37,9 +37,12 @@
 
     <div class="myWeek2">
         <h1>Week 2</h1>
-        
+
     <h3>IMF lending</h3>
     <div class="chart" id="Vis3"></div>
+
+    <h3></h3>
+    <div class="chart" id="Vis4"></div>
 
     </div> 
 </body>
@@ -50,11 +53,13 @@
     var myChart1 = "chart1_covidUKRegions.json";
     var myChart2 = "chart2_ukProductivity.json";
     var myChart3 = "IMFlending.json";
+    var mychart4 = "IMFlending_GDP.json";
 
     // Embed charts:
     vegaEmbed('#Vis1', myChart1);
     vegaEmbed('#Vis2', myChart2);
     vegaEmbed('#Vis3', myChart3);
+    vegaEmbed('#Vis4', mychart4);
 </script>
 
 </html>

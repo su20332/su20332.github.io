@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Points scored by team in the Six Nations 2022",
+      "subtitle": "The table order follows the final standings of the Six Nations 2022",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize":10,
+      "anchor":"start",
+      "color": "black"},
+    "data": {
+      "values": [{"POS": 1, "TEAM": "France", "PL": 5, "W": 5, "D": 0, "L": 0, "PF": 141, "PA": 73, "DIFF": 68, "TF": 17, "TA": 7, "TB": 2, "LB": 0, "PTS": 25}, {"POS": 2, "TEAM": "Ireland", "PL": 5, "W": 4, "D": 0, "L": 1, "PF": 168, "PA": 63, "DIFF": 105, "TF": 24, "TA": 4, "TB": 4, "LB": 1, "PTS": 21}, {"POS": 3, "TEAM": "England", "PL": 5, "W": 2, "D": 0, "L": 3, "PF": 101, "PA": 96, "DIFF": 5, "TF": 8, "TA": 12, "TB": 1, "LB": 1, "PTS": 10}, {"POS": 4,  "TEAM": "Scotland", "PL": 5, "W": 2, "D": 0, "L": 3, "PF": 92, "PA": 121, "DIFF": -29, "TF": 11, "TA": 15, "TB": 1, "LB": 1, "PTS": 10}, {"POS": 5,  "TEAM": "Wales", "PL": 5, "W": 1, "D": 0, "L": 4, "PF": 76, "PA": 104, "DIFF": -28, "TF": 8, "TA": 8, "TB": 0, "LB": 3, "PTS": 7}, {"POS": 6, "TEAM": "Italy", "PL": 5, "W": 1, "D": 0, "L": 4, "PF": 60, "PA": 181, "DIFF": -121, "TF": 5, "TA": 27, "TB": 0, "LB": 0, "PTS": 4}]
+    },
+    "height":300,
+    "width": 300,
+    "mark": "bar",
+    "encoding": {
+      "y": {"field": "TEAM", "type": "ordinal", "sort": {"op": "sum", "field": "POS"},"title": null},
+      "x": {"field": "PF", "type": "quantitative", 
+      "title": "Points scored",
+      "axis": {"grid": false}}
+    }}
+    
+  
+  

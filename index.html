@@ -11,12 +11,12 @@
     <title>Document</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="index.css">
 
     <!--The next three lines allow the Vega embed-->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed"></script>
 </head>
 
 
@@ -34,36 +34,43 @@
         <p>My second chart looks at the inflation rate of the G7 countries excluding US.</p>
 
         <div class="chart" id="Vis2"></div>
+    
 
-        <div class="myWeek2">
-            <h1>Week 2</h1>
+    <div class="myWeek2">
+        <h1>Week 2</h1>
 
-            <h3>IMF lending</h3>
-            <div class="chart" id="Vis3"></div>
+        <h3>IMF lending</h3>
+        <div class="chart" id="Vis3"></div>
 
-            <h3></h3>
-            <div class="chart" id="Vis4"></div>
-            <p>The chart above shows that when IMF lending is measured
-                as percentage of global GDP 1984 is the most 'risky' year.</p>
+        <h3></h3>
+        <div class="chart" id="Vis4"></div>
+        <p>The chart above shows that when IMF lending is measured
+            as percentage of global GDP 1984 is the most 'risky' year.</p>
+    </div>
 
-        </div class="myWeek4">
+    <div class="myWeek4">
         <h1>Week 4</h1>
         <h3>Most points scored in Six Nations 2022</h3>
         <div class="chart" id="Vis7"></div>
-        <p>I chose to scrape the Six Nations rugby website because of my passion for rugby and the ease of which it was to scrape the data.
-            Access to my data analysis is <a href= "https://colab.research.google.com/drive/1NVl43px_xF_xojLcol-OyIELioQGjVPt?usp=sharing" id="link1">here.</a></p>
+        <p>I chose to scrape the Six Nations rugby website because of my passion for rugby and the ease of which it
+            was to scrape the data.
+            Access to my data analysis is <a
+                href="https://colab.research.google.com/drive/1NVl43px_xF_xojLcol-OyIELioQGjVPt?usp=sharing"
+                id="link1">here.</a></p>
+    </div>
 
-        </div class="myWeek5">
+    <div class="myWeek5">
         <h1>Week 5</h1>
-        <div class="chart" id="Vis8"></div>
-        <div class="chart" id="Vis9"></div>  
-        <div class="chart" id="Vis10"></div>
-        <div class="chart" id="Vis11"></div>
-        <div class="chart" id="Vis12"></div>  
-        <div class="chart" id="Vis13"></div>
-        <div class="chart" id="Vis14"></div>
-        <div class="chart" id="Vis15"></div>  
-        <div class="chart" id="Vis16"></div> 
+        <div class="chartw5" id="Vis8"></div>
+        <div class="chartw5" id="Vis9"></div>
+        <div class="chartw5" id="Vis10"></div>
+        <div class="chartw5" id="Vis11"></div>
+        <div class="chartw5" id="Vis12"></div>
+        <div class="chartw5" id="Vis13"></div>
+        <div class="chartw5" id="Vis14"></div>
+        <div class="chartw5" id="Vis15"></div>
+        <div class="chartw5" id="Vis16"></div>
+    </div>
 
 </body>
 
@@ -73,36 +80,36 @@
     var myChart1 = "Visual1_Inflation.json";
     var myChart2 = "Visual2_inflation.json";
     var myChart3 = "IMFlending.json";
-    var mychart4 = "IMFlending_GDP.json";
-    var mychart7 = "six_nations.json";
-    var mychart8 = "data_ONS-YCNC.json";
-    var mychart9 = "data_ONS-YCND.json";
-    var mychart10 = "data_ONS-YCNE.json";
-    var mychart11 = "data_ONS-YCNF.json";
-    var mychart12 = "data_ONS-YCNG.json";
-    var mychart13 = "data_ONS-YCNH.json";
-    var mychart14 = "data_ONS-YCNI.json";
-    var mychart15 = "data_ONS-YCNJ.json";
-    var mychart16 = "data_ONS-YCNK.json";
-    
+    var myChart4 = "IMFlending_GDP.json";
+    var myChart7 = "six_nations.json";
+    var myChart8 = "north_east_unemployment.json";
+    var myChart9 = "north_west_unemployment.json";
+    var myChart10 = "yorkshire_thehumber_unemployment.json";
+    var myChart11 = "east_midlands_unemployment.json";
+    var myChart12 = "west_midlands_unemployment.json";
+    var myChart13 = "east_england_unemployment.json";
+    var myChart14 = "london_unemployment.json";
+    var myChart15 = "south_east_england_unemployment.json";
+    var myChart16 = "south_west_england_unemployment.json";
+
 
     // Embed charts:
     vegaEmbed('#Vis1', myChart1);
     vegaEmbed('#Vis2', myChart2);
     vegaEmbed('#Vis3', myChart3);
-    vegaEmbed('#Vis4', mychart4);
-    vegaEmbed('#Vis7', mychart7);
+    vegaEmbed('#Vis4', myChart4);
+    vegaEmbed('#Vis7', myChart7);
     vegaEmbed('#Vis8', myChart8);
     vegaEmbed('#Vis9', myChart9);
     vegaEmbed('#Vis10', myChart10);
-    vegaEmbed('#Vis11', mychart11);
-    vegaEmbed('#Vis12', mychart12);
+    vegaEmbed('#Vis11', myChart11);
+    vegaEmbed('#Vis12', myChart12);
     vegaEmbed('#Vis13', myChart13);
     vegaEmbed('#Vis14', myChart14);
     vegaEmbed('#Vis15', myChart15);
-    vegaEmbed('#Vis16', mychart16);
+    vegaEmbed('#Vis16', myChart16);
 
-    
+
 </script>
 
 </html>

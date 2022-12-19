@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Northen Ireland",
+    "subtitle": [
+      "Mercator Projection"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 8,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/su20332/su20332.github.io/main/northern_ireland_data1.json",
+    "format": {
+      "type": "topojson",
+      "feature": "wpc"
+    }
+  },
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "properties.PC_NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/su20332/su20332.github.io/main/anti_social_incidents_recorded_police_2021.csv"
+        },
+        "key": "Area",
+        "fields": [
+          "Anti-Social Behaviour Incidents"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "darkblue",
+    "strokeWidth": 0.1
+  },
+  "encoding": {
+    "color": {
+      "field": "Anti-Social Behaviour Incidents",
+      "type": "quantitative"
+    },
+    "tooltip": {
+      "field": "properties.PC_NAME"
+    }
+  }
+}

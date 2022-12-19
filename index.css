@@ -32,6 +32,16 @@ h1, h3, p{
     border-color: rgb(100,100,100)
 }
 
+.myWeek5{
+    margin: auto;
+    max-width: 1200px;
+    background-color: #FFF1E0;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100,100,100)
+}
 
 /* Set the apperance of the class, chart */
 .chart{

@@ -1,0 +1,467 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The pound against the dollar",
+    "fontSize": 18,
+    "anchor": "start",
+    "subtitle": "Spot exchange rate, USD$ into Sterling 2022. Source: Bank of England",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "color": "black"
+  },
+  "description": "Google's stock price over time.",
+  "data": {
+    "values": [
+      {
+        "Date": "2022-12-19",
+        "Spot exchange rate, US $ into Sterling": 1.213
+      },
+      {
+        "Date": "2022-12-16",
+        "Spot exchange rate, US $ into Sterling": 1.2153
+      },
+      {
+        "Date": "2022-12-15",
+        "Spot exchange rate, US $ into Sterling": 1.222
+      },
+      {
+        "Date": "2022-12-14",
+        "Spot exchange rate, US $ into Sterling": 1.2404
+      },
+      {
+        "Date": "2022-12-13",
+        "Spot exchange rate, US $ into Sterling": 1.2395
+      },
+      {
+        "Date": "2022-12-12",
+        "Spot exchange rate, US $ into Sterling": 1.2253
+      },
+      {
+        "Date": "2022-12-09",
+        "Spot exchange rate, US $ into Sterling": 1.2295
+      },
+      {
+        "Date": "2022-12-08",
+        "Spot exchange rate, US $ into Sterling": 1.2219
+      },
+      {
+        "Date": "2022-12-07",
+        "Spot exchange rate, US $ into Sterling": 1.2198
+      },
+      {
+        "Date": "2022-12-06",
+        "Spot exchange rate, US $ into Sterling": 1.2223
+      },
+      {
+        "Date": "2022-12-05",
+        "Spot exchange rate, US $ into Sterling": 1.2218
+      },
+      {
+        "Date": "2022-12-02",
+        "Spot exchange rate, US $ into Sterling": 1.2216
+      },
+      {
+        "Date": "2022-12-01",
+        "Spot exchange rate, US $ into Sterling": 1.2267
+      },
+      {
+        "Date": "2022-11-30",
+        "Spot exchange rate, US $ into Sterling": 1.1912
+      },
+      {
+        "Date": "2022-11-29",
+        "Spot exchange rate, US $ into Sterling": 1.2002
+      },
+      {
+        "Date": "2022-11-28",
+        "Spot exchange rate, US $ into Sterling": 1.204
+      },
+      {
+        "Date": "2022-11-25",
+        "Spot exchange rate, US $ into Sterling": 1.2095
+      },
+      {
+        "Date": "2022-11-24",
+        "Spot exchange rate, US $ into Sterling": 1.2142
+      },
+      {
+        "Date": "2022-11-23",
+        "Spot exchange rate, US $ into Sterling": 1.2065
+      },
+      {
+        "Date": "2022-11-22",
+        "Spot exchange rate, US $ into Sterling": 1.188
+      },
+      {
+        "Date": "2022-11-21",
+        "Spot exchange rate, US $ into Sterling": 1.1786
+      },
+      {
+        "Date": "2022-11-18",
+        "Spot exchange rate, US $ into Sterling": 1.1927
+      },
+      {
+        "Date": "2022-11-17",
+        "Spot exchange rate, US $ into Sterling": 1.1778
+      },
+      {
+        "Date": "2022-11-16",
+        "Spot exchange rate, US $ into Sterling": 1.1889
+      },
+      {
+        "Date": "2022-11-15",
+        "Spot exchange rate, US $ into Sterling": 1.1895
+      },
+      {
+        "Date": "2022-11-14",
+        "Spot exchange rate, US $ into Sterling": 1.1729
+      },
+      {
+        "Date": "2022-11-11",
+        "Spot exchange rate, US $ into Sterling": 1.1774
+      },
+      {
+        "Date": "2022-11-10",
+        "Spot exchange rate, US $ into Sterling": 1.1678
+      },
+      {
+        "Date": "2022-11-09",
+        "Spot exchange rate, US $ into Sterling": 1.1374
+      },
+      {
+        "Date": "2022-11-08",
+        "Spot exchange rate, US $ into Sterling": 1.1564
+      },
+      {
+        "Date": "2022-11-07",
+        "Spot exchange rate, US $ into Sterling": 1.1466
+      },
+      {
+        "Date": "2022-11-04",
+        "Spot exchange rate, US $ into Sterling": 1.1277
+      },
+      {
+        "Date": "2022-11-03",
+        "Spot exchange rate, US $ into Sterling": 1.1179
+      },
+      {
+        "Date": "2022-11-02",
+        "Spot exchange rate, US $ into Sterling": 1.1463
+      },
+      {
+        "Date": "2022-11-01",
+        "Spot exchange rate, US $ into Sterling": 1.146
+      },
+      {
+        "Date": "2022-10-31",
+        "Spot exchange rate, US $ into Sterling": 1.1514
+      },
+      {
+        "Date": "2022-10-28",
+        "Spot exchange rate, US $ into Sterling": 1.1592
+      },
+      {
+        "Date": "2022-10-27",
+        "Spot exchange rate, US $ into Sterling": 1.1581
+      },
+      {
+        "Date": "2022-10-26",
+        "Spot exchange rate, US $ into Sterling": 1.16
+      },
+      {
+        "Date": "2022-10-25",
+        "Spot exchange rate, US $ into Sterling": 1.1458
+      },
+      {
+        "Date": "2022-10-24",
+        "Spot exchange rate, US $ into Sterling": 1.1314
+      },
+      {
+        "Date": "2022-10-21",
+        "Spot exchange rate, US $ into Sterling": 1.1126
+      },
+      {
+        "Date": "2022-10-20",
+        "Spot exchange rate, US $ into Sterling": 1.1319
+      },
+      {
+        "Date": "2022-10-19",
+        "Spot exchange rate, US $ into Sterling": 1.126
+      },
+      {
+        "Date": "2022-10-18",
+        "Spot exchange rate, US $ into Sterling": 1.1322
+      },
+      {
+        "Date": "2022-10-17",
+        "Spot exchange rate, US $ into Sterling": 1.1434
+      },
+      {
+        "Date": "2022-10-14",
+        "Spot exchange rate, US $ into Sterling": 1.1251
+      },
+      {
+        "Date": "2022-10-13",
+        "Spot exchange rate, US $ into Sterling": 1.1237
+      },
+      {
+        "Date": "2022-10-12",
+        "Spot exchange rate, US $ into Sterling": 1.1072
+      },
+      {
+        "Date": "2022-10-11",
+        "Spot exchange rate, US $ into Sterling": 1.1083
+      },
+      {
+        "Date": "2022-10-10",
+        "Spot exchange rate, US $ into Sterling": 1.1048
+      },
+      {
+        "Date": "2022-10-07",
+        "Spot exchange rate, US $ into Sterling": 1.1117
+      },
+      {
+        "Date": "2022-10-06",
+        "Spot exchange rate, US $ into Sterling": 1.1199
+      },
+      {
+        "Date": "2022-10-05",
+        "Spot exchange rate, US $ into Sterling": 1.1245
+      },
+      {
+        "Date": "2022-10-04",
+        "Spot exchange rate, US $ into Sterling": 1.1404
+      },
+      {
+        "Date": "2022-10-03",
+        "Spot exchange rate, US $ into Sterling": 1.128
+      },
+      {
+        "Date": "2022-09-30",
+        "Spot exchange rate, US $ into Sterling": 1.117
+      },
+      {
+        "Date": "2022-09-29",
+        "Spot exchange rate, US $ into Sterling": 1.1034
+      },
+      {
+        "Date": "2022-09-28",
+        "Spot exchange rate, US $ into Sterling": 1.0745
+      },
+      {
+        "Date": "2022-09-27",
+        "Spot exchange rate, US $ into Sterling": 1.0774
+      },
+      {
+        "Date": "2022-09-26",
+        "Spot exchange rate, US $ into Sterling": 1.0787
+      },
+      {
+        "Date": "2022-09-23",
+        "Spot exchange rate, US $ into Sterling": 1.0897
+      },
+      {
+        "Date": "2022-09-22",
+        "Spot exchange rate, US $ into Sterling": 1.1265
+      },
+      {
+        "Date": "2022-09-21",
+        "Spot exchange rate, US $ into Sterling": 1.1333
+      },
+      {
+        "Date": "2022-09-20",
+        "Spot exchange rate, US $ into Sterling": 1.1415
+      },
+      {
+        "Date": "2022-09-16",
+        "Spot exchange rate, US $ into Sterling": 1.1431
+      },
+      {
+        "Date": "2022-09-15",
+        "Spot exchange rate, US $ into Sterling": 1.149
+      },
+      {
+        "Date": "2022-09-14",
+        "Spot exchange rate, US $ into Sterling": 1.158
+      },
+      {
+        "Date": "2022-09-13",
+        "Spot exchange rate, US $ into Sterling": 1.1541
+      },
+      {
+        "Date": "2022-09-12",
+        "Spot exchange rate, US $ into Sterling": 1.1704
+      },
+      {
+        "Date": "2022-09-09",
+        "Spot exchange rate, US $ into Sterling": 1.1583
+      },
+      {
+        "Date": "2022-09-08",
+        "Spot exchange rate, US $ into Sterling": 1.1491
+      },
+      {
+        "Date": "2022-09-07",
+        "Spot exchange rate, US $ into Sterling": 1.1467
+      },
+      {
+        "Date": "2022-09-06",
+        "Spot exchange rate, US $ into Sterling": 1.1529
+      },
+      {
+        "Date": "2022-09-05",
+        "Spot exchange rate, US $ into Sterling": 1.1507
+      },
+      {
+        "Date": "2022-09-02",
+        "Spot exchange rate, US $ into Sterling": 1.1584
+      },
+      {
+        "Date": "2022-09-01",
+        "Spot exchange rate, US $ into Sterling": 1.1526
+      },
+      {
+        "Date": "2022-08-31",
+        "Spot exchange rate, US $ into Sterling": 1.1638
+      },
+      {
+        "Date": "2022-08-30",
+        "Spot exchange rate, US $ into Sterling": 1.1631
+      },
+      {
+        "Date": "2022-08-26",
+        "Spot exchange rate, US $ into Sterling": 1.1792
+      },
+      {
+        "Date": "2022-08-25",
+        "Spot exchange rate, US $ into Sterling": 1.1826
+      },
+      {
+        "Date": "2022-08-24",
+        "Spot exchange rate, US $ into Sterling": 1.1818
+      },
+      {
+        "Date": "2022-08-23",
+        "Spot exchange rate, US $ into Sterling": 1.1852
+      },
+      {
+        "Date": "2022-08-22",
+        "Spot exchange rate, US $ into Sterling": 1.179
+      },
+      {
+        "Date": "2022-08-19",
+        "Spot exchange rate, US $ into Sterling": 1.1805
+      },
+      {
+        "Date": "2022-08-18",
+        "Spot exchange rate, US $ into Sterling": 1.2003
+      },
+      {
+        "Date": "2022-08-17",
+        "Spot exchange rate, US $ into Sterling": 1.2044
+      },
+      {
+        "Date": "2022-08-16",
+        "Spot exchange rate, US $ into Sterling": 1.2095
+      },
+      {
+        "Date": "2022-08-15",
+        "Spot exchange rate, US $ into Sterling": 1.208
+      },
+      {
+        "Date": "2022-08-12",
+        "Spot exchange rate, US $ into Sterling": 1.2118
+      },
+      {
+        "Date": "2022-08-11",
+        "Spot exchange rate, US $ into Sterling": 1.2226
+      },
+      {
+        "Date": "2022-08-10",
+        "Spot exchange rate, US $ into Sterling": 1.2259
+      },
+      {
+        "Date": "2022-08-09",
+        "Spot exchange rate, US $ into Sterling": 1.2088
+      },
+      {
+        "Date": "2022-08-08",
+        "Spot exchange rate, US $ into Sterling": 1.2119
+      },
+      {
+        "Date": "2022-08-05",
+        "Spot exchange rate, US $ into Sterling": 1.206
+      },
+      {
+        "Date": "2022-08-04",
+        "Spot exchange rate, US $ into Sterling": 1.2111
+      },
+      {
+        "Date": "2022-08-03",
+        "Spot exchange rate, US $ into Sterling": 1.2112
+      },
+      {
+        "Date": "2022-08-02",
+        "Spot exchange rate, US $ into Sterling": 1.2218
+      },
+      {
+        "Date": "2022-08-01",
+        "Spot exchange rate, US $ into Sterling": 1.2283
+      },
+      {
+        "Date": "2022-07-29",
+        "Spot exchange rate, US $ into Sterling": 1.2162
+      },
+      {
+        "Date": "2022-07-28",
+        "Spot exchange rate, US $ into Sterling": 1.2114
+      },
+      {
+        "Date": "2022-07-27",
+        "Spot exchange rate, US $ into Sterling": 1.2031
+      },
+      {
+        "Date": "2022-07-26",
+        "Spot exchange rate, US $ into Sterling": 1.2044
+      },
+      {
+        "Date": "2022-07-25",
+        "Spot exchange rate, US $ into Sterling": 1.2045
+      }
+    ]
+  },
+  "height": 300,
+  "width": 300,
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "labelExpr": "[timeFormat(datum.value, '%b'), timeFormat(datum.value, '%m') == '01' ? timeFormat(datum.value, '%Y') : '']",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Spot exchange rate, US $ into Sterling",
+      "type": "quantitative",
+      "title": "Dollars, USD$",
+      "axis": {
+        "domain": false,
+        "ticks": false
+      },
+      "scale": {
+        "domain": [
+          1,
+          1.3
+        ]
+      }
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

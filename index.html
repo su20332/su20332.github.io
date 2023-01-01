@@ -30,8 +30,8 @@
         <p>The first chart tracks UK inflation rate.</p>
         <div class="chart" id="Vis1"></div>
 
-        <h3>Inflation in G7 countries</h3>
-        <p>My second chart looks at the inflation rate of the G7 countries excluding US.</p>
+        <h3>Source of inflation</h3>
+        <p>My second chart looks at the source of inflation.</p>
 
         <div class="chart" id="Vis2"></div>
     </div>
@@ -47,6 +47,13 @@
         <div class="chart" id="Vis4"></div>
         <p>The chart above shows that when IMF lending is measured
             as percentage of global GDP 1984 is the most 'risky' year.</p>
+    </div>
+
+    <div class="myWeek">
+        <h1>Week 3</h1>
+
+        <div class="chart" id="Vis5"></div>
+
     </div>
 
     <div class="myWeek">
@@ -79,15 +86,20 @@
         <div class="chart" id="Vis18"></div>
     </div>
 
+    <div class="myWeek">
+        <h1>Week 8</h1>
+    </div>
+
 </body>
 
 
 <script>
     //Define charts:
     var myChart1 = "Visual1_Inflation.json";
-    var myChart2 = "Visual2_inflation.json";
+    var myChart2 = "source_inflation.json";
     var myChart3 = "IMFlending.json";
     var myChart4 = "IMFlending_GDP.json";
+    var myChart5 ="Spot_exchange_rate_US_into_sterling_line.json"
     var myChart7 = "six_nations.json";
     var myChart8 = "north_east_unemployment.json";
     var myChart9 = "north_west_unemployment.json";
@@ -107,6 +119,7 @@
     vegaEmbed('#Vis2', myChart2);
     vegaEmbed('#Vis3', myChart3);
     vegaEmbed('#Vis4', myChart4);
+    vegaEmbed('#Vis5', myChart5);
     vegaEmbed('#Vis7', myChart7);
     vegaEmbed('#Vis8', myChart8);
     vegaEmbed('#Vis9', myChart9);
@@ -119,6 +132,7 @@
     vegaEmbed('#Vis16', myChart16);
     vegaEmbed('#Vis17', myChart17);
     vegaEmbed('#Vis18', myChart18);
+
 
 
 </script>

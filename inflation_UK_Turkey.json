@@ -1,0 +1,61 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Consumer Price Index - UK and Turkey",
+      "fontSize": 18,
+      "anchor": "start",
+      "subtitle": "CPI: Total all items for United Kingdom and Turkey. Source: FRED",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "color": "black"
+    },
+    "width": 300,
+    "height": 300,
+        "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title":null,
+        "axis":{"grid": false}
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "axis":{"title":"Growth rate same period previous year",
+        "grid": false}
+
+       
+      },
+      "color":{"field":"name",
+      "type": "ordinal",
+      "title":null,
+      "legend":{"orient": "bottom","columns":2}}
+    },
+
+    "layer":[{"data": {
+      "url": "https://raw.githubusercontent.com/su20332/su20332.github.io/main/data_FRED-UK_inflation.json",
+      "format":{"type": "json", "property": "observations"}},
+      
+      "transform": [
+        {"calculate": "replace(datum.realtime_end, '2022-12-31', 'UK')", "as":"name"},
+        
+      ],
+     "mark":{"type":"line"}},
+
+          {"data": {
+            "url": "https://raw.githubusercontent.com/su20332/su20332.github.io/main/data_FRED-Turkey_inflation.json",
+            "format": {
+              "type": "json",
+              "property": "observations"}},
+              "transform": [
+                {"calculate": "replace(datum.realtime_end, '2022-12-31', 'Turkey')", "as": "name"},
+                
+      ],
+    "mark": {"type": "line"}}
+    ],
+    "config": {
+    "view": {
+       "stroke": "transparent"
+    }
+  }
+  }

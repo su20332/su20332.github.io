@@ -13,57 +13,14 @@ body{
  
 }
 
-/*BUTTONS*/
-
-a{
-    
-    border-bottom: 100ch;
-    border-style:solid;
-    border-bottom:black;
-    border-top: 0cm;
-    border-left: 0cm;
-    border-right: 0cm;
-
-    margin:20px
-
- 
-
-}
-
-#link1{
-    border-color:rgb(0, 0, 0);
-    border-style:hidden ;
-
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    
-}
-
-#link1:hover{
-    border-bottom: 5ch;
-    border-style:solid;
-    border-bottom:black;
-    border-top: 0cm;
-    border-left: 0cm;
-    border-right: 0cm;
-
-    margin:20px
-
-
-}
-
-
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h2, h3, p{
+h1, h3, p{
     color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
     
-.homepage{
-    text-align: center;
-}
 .myWeek{
     margin: auto;
     max-width: 600px;

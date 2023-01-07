@@ -71,9 +71,9 @@
     "y": {
       "field": "value",
       "type": "quantitative",
-      "title": "index 2010 = 100",
+      "title": "Index 2010 = 100",
       "axis": {
-        "grid": false
+        "grid": false, "titleFontWeight":"normal"
       }
     }
   },

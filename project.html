@@ -26,6 +26,8 @@
     
         
       <h1>How have the economic sanctions on Russia affected its economy?</h1>
+
+      
         <p>Since Russia’s invasion of Ukraine in February 2022, the United States with allies and partners around the world has worked to impose economic costs on Russia for its invasion.</p> 
 
         <p>This project considers the imposition of economic sanctions on Russia and how they have affected Russia’s economy. Since the sanctions were imposed so quickly, it is difficult to analyse the exact aim of the financial sanctions. It may be to levy as stern and rapid punishment on Russia.</p>
@@ -38,72 +40,59 @@
         <div class="chart1" id="Vis1"></div>
         
 
-        <h2>Source of inflation</h2>
-        <p>My second chart looks at the source of inflation.</p>
+        <h2>Comparison of market indexes</h2>
+        
 
         <div class="chart" id="Vis2"></div>
-    </div>
+    
     
 
     <div class="myWeek">
-        <h1>Week 2</h1>
 
-        <h3>IMF lending</h3>
+        <h2>Foreign Investment</h2>
         <div class="chart" id="Vis3"></div>
-
-        <h3></h3>
-        <div class="chart" id="Vis4"></div>
-        <p>The chart above shows that when IMF lending is measured
-            as percentage of global GDP 1984 is the most 'risky' year.</p>
     </div>
-
-    <div class="myWeek">
-        <h1>Week 3</h1>
-
-        <h3>Spot exchange rate</h3>
+        
+        <h2>Trade</h2>
+        <div class="chart" id="Vis4"></div>
+        
         <div class="chart" id="Vis5"></div>
 
-        <h3></h3>
+        <h2>2023 GDP forecast</h2>
         <div class="chart" id="Vis6"></div>
-        <p>sdgbnsvkfdbkl</p>
+        
+        <h2>Data</h2>
+        <p>I accessed the data for the real broad effective exchange rate for Russia from FRED. It was downloaded from their API using Google Colab*hyperlink*. I was able to do this by signing up to a FRED account to use my own unique API Key.</p>
 
-    </div>
+        <p>To access the global market indices I installed Yahoo! Finance API using Google Colab*hyperlink* again. Then I used a loop and concatenated the DataFrames to include all my shortlisted indices into one DataFrame.</p>
 
-    <div class="myWeek">
-        <h1>Week 4</h1>
-        <h3>Most points scored in Six Nations 2022</h3>
-        <div class="chart" id="Vis7"></div>
-        <p>I chose to scrape the Six Nations rugby website because of my passion for rugby and the ease of which it
-            was to scrape the data.
-            Access to my data analysis is <a
-                href="https://colab.research.google.com/drive/1NVl43px_xF_xojLcol-OyIELioQGjVPt?usp=sharing"
-                id="link1">here.</a></p>
-    </div>
+        <p>To access the OCED and IMF data on FDI inward flows I downloaded the data in csv files. I had to read the csv with encoding=’latin 1’.</p>
 
-    <div class="myWeek5">
-        <h1>Week 5</h1> 
-        <div class="chartw5" id="Vis7"></div>
-        <div class="chartw5" id="Vis8"></div>
-        <div class="chartw5" id="Vis9"></div>
-        <div class="chartw5" id="Vis10"></div>
-        <div class="chartw5" id="Vis11"></div>
-        <div class="chartw5" id="Vis12"></div>
-        <div class="chartw5" id="Vis13"></div>
-        <div class="chartw5" id="Vis14"></div>
-        <div class="chartw5" id="Vis15"></div>
-        <div class="chartw5" id="Vis16"></div>
+        <p>To access the balance of payments data, I scraped data*hyperlink* using tabula from a PDF. This was a PDF published by the Bank of Russia. The data was in an unstructured form so I followed this helpful website** to create the DataFrame.</p>  
+        
+        <p>I downloaded GDP forecast data from IMF. I only incorporated 2023 data because it would be the most accurate. I also removed historical data because it has limited relation to the economic sanctions on Russia.
+          </p>
 
-    </div>
+        <h2>Data cleaning</h2>
+        <p>The paucity of data from Russian institutions in 2022 has caused me difficulties. For example, Russia stopped publishing trade data after 2022 Q2. Commercial publications often used data from paid sources so I used data up to when it was made available, for example, the imports and exports chart.</p>
+        
+        <p>Firstly, I manually pasted the years where values were missing because it was the most efficient method.  I downloaded the csv file into Google colab*hyperlink* (using python) to clean the data. As I was only interested in quarterly data I used a multiIndex. I followed this helpful webpage*hyperlink*.</p>
 
-    <div class="myWeek">
-        <h1>Week 7</h1>
-        <div class="chart" id="Vis17"></div>
-        <div class="chart" id="Vis18"></div>
-    </div>
+        <p>After scraping the PDF, some values were slightly incorrect so I changed the values manually in python*Colab*. I knew Vega-Lite would be unable to read the date just by quarters so added a new column combining the year and quarter so Vega-Lite could read it as temporal data.</p>
 
-    <div class="myWeek">
-        <h1>Week 8</h1>
-    </div>
+        <p>Unfortunately, not all the country names matched so some countries disappeared from the world map. To overcome this, I matched countries on ‘alpha3’ codes rather than names. In colab*hyperlink* I first had to change downloaded country codes to lower case so it would match to the other dataset.</p>
+
+        <h2>Conclusion</h2>
+
+    
+
+    
+
+    
+
+    
+
+    
 
 </body>
 
@@ -115,7 +104,7 @@
     var myChart3 = "FDI_russia_chart.json";
     var myChart4 = "russia_exports_chart.json";
     var myChart5 = "russia_imports_chart.json";
-    var myChart7 = "worldmap_data.json";
+    var myChart6 = "worldmap_data.json";
 
 
 
@@ -126,18 +115,7 @@
     vegaEmbed('#Vis4', myChart4);
     vegaEmbed('#Vis5', myChart5);
     vegaEmbed('#Vis6', myChart6);
-    vegaEmbed('#Vis7', myChart7);
-    vegaEmbed('#Vis8', myChart8);
-    vegaEmbed('#Vis9', myChart9);
-    vegaEmbed('#Vis10', myChart10);
-    vegaEmbed('#Vis11', myChart11);
-    vegaEmbed('#Vis12', myChart12);
-    vegaEmbed('#Vis13', myChart13);
-    vegaEmbed('#Vis14', myChart14);
-    vegaEmbed('#Vis15', myChart15);
-    vegaEmbed('#Vis16', myChart16);
-    vegaEmbed('#Vis17', myChart17);
-    vegaEmbed('#Vis18', myChart18);
+   
 
 
 

@@ -30,7 +30,7 @@
       
         <p>Since Russia’s invasion of Ukraine in February 2022, the United States with allies and partners around the world has worked to impose economic costs on Russia for its invasion.</p> 
 
-        <p>This project considers the imposition of economic sanctions on Russia and how they have affected Russia’s economy. Since the sanctions were imposed so quickly, it is difficult to analyse the exact aim of the financial sanctions. It may be to levy as stern and rapid punishment on Russia.</p>
+        <p>This project considers the imposition of economic sanctions on Russia and how they have affected Russia’s economy.</p>
 
         <p>I have examined some key economic indicator such as Gross Domestic Product (GDP), strength of the currency (Russian ruble), imports and exports and Foreign Direct Investment (FDI) as well as comparative performance of the MOEX, NASDAQ and FTSE indices.
           </p>
@@ -62,7 +62,9 @@
         <div class="chart" id="Vis6"></div>
         
         <h2>Data</h2>
-        <p>I accessed the data for the real broad effective exchange rate for Russia from FRED. It was downloaded from their API using Google Colab*hyperlink*. I was able to do this by signing up to a FRED account to use my own unique API Key.</p>
+        <p>I accessed the data for the real broad effective exchange rate for Russia from FRED. It was downloaded from their API using <a
+          href="https://colab.research.google.com/drive/1h-0GAGYCdEvxxHRrioc8dFdIEotLpV6Z?usp=sharing"
+          id="link1">Google Colab</a>. I was able to do this by signing up to a FRED account to use my own unique API Key.</p>
 
         <p>To access the global market indices I installed Yahoo! Finance API using Google Colab*hyperlink* again. Then I used a loop and concatenated the DataFrames to include all my shortlisted indices into one DataFrame.</p>
 
@@ -83,7 +85,12 @@
         <p>Unfortunately, not all the country names matched so some countries disappeared from the world map. To overcome this, I matched countries on ‘alpha3’ codes rather than names. In colab*hyperlink* I first had to change downloaded country codes to lower case so it would match to the other dataset.</p>
 
         <h2>Conclusion</h2>
+        
+        <p>The immediate effect of Western sanctions on Russia was a plunge in the ruble. It also saw bank runs and the collapse in the value of Russian companies traded domestically and abroad to a point that necessitated the shutdown of the Russian stock market and led to the removal of Russian equities from foreign indices. In addition, Russia’s sovereign credit rating collapsed.</p>
 
+        <p>While the economic sanctions have failed to crush the Russian ruble; it is now historically high, it does not mean that that Russia’s economy is strong. If the economy was strong we would expect FDI to be rising, however, we see the opposite effect. The reason for the rise in the ruble is because Russian imports have collapsed.</p>
+
+        <p>Other economic indicators have fallen markedly. In 2022, GDP is predicted to have fallen by 3.4 percent and will have the second worst growth rate in the world in 2023 according to the IMF and OECD.</p>
     
 
     

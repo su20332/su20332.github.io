@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": {
+      "text": "FDI inward flows to Russia",
+      "fontSize": 18,
+      "anchor": "start",
+      "subtitle": "Measured quarterly in USD millions. Source: OECD and IMF",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "color": "black"
+    },
+
+    "width":300,
+    "height":300,
+
+  "data": {"url": "https://raw.githubusercontent.com/su20332/su20332.github.io/main/FDIquarterlyRUSSIAcleandata.csv"
+},
+    "transform": [{"calculate":"replace(datum.YQ, '-Q1', '-01')", "as":"date1"},
+    {"calculate":"replace(datum.date1, '-Q2', '-04')", "as":"date2"},
+    {"calculate":"replace(datum.date2, '-Q3', '-07')", "as":"date3"},
+    {"calculate":"replace(datum.date3, '-Q4', '-10')", "as":"date4"},
+
+        {"calculate":"timeParse(datum.date4, '%Y-%m')", "as": "dateClean"}],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "dateClean", "type": "temporal",
+    "title":null,
+    "axis":{"grid": false}},
+    "y": {"field": "value", "type": "quantitative",
+    "title":null,
+    "axis":{"grid": false}},
+      "tooltip":[{"field":"YQ", "type":"nominal", "title":"Quarter"},
+    {"field":"value", "type":"quantitative","format":"$,"}]},
+      "config": {
+    "view": {
+        "stroke": "transparent"}}
+}

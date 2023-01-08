@@ -1,0 +1,170 @@
+Country,Code,Year,Real GDP growth (annual %)
+Afghanistan,afg,2023,no data
+Albania,alb,2023,2.5
+Algeria,dza,2023,2.6
+Andorra,and,2023,2
+Angola,ago,2023,3.4
+Antigua and Barbuda,atg,2023,5.6
+Argentina,arg,2023,2
+Armenia,arm,2023,3.5
+Aruba,abw,2023,2
+Australia,aus,2023,1.9
+Austria,aut,2023,1
+Azerbaijan,aze,2023,2.5
+Bahrain,bhr,2023,3
+Bangladesh,bgd,2023,6
+Barbados,brb,2023,5
+Belarus,blr,2023,0.2
+Belgium,bel,2023,0.4
+Belize,blz,2023,2
+Benin,ben,2023,6.2
+Bhutan,btn,2023,4.3
+Bosnia and Herzegovina,bih,2023,2
+Botswana,bwa,2023,4
+Brazil,bra,2023,1
+Brunei Darussalam,brn,2023,3.3
+Bulgaria,bgr,2023,3
+Burkina Faso,bfa,2023,4.8
+Burundi,bdi,2023,4.1
+Cambodia,khm,2023,6.2
+Cameroon,cmr,2023,4.6
+Canada,can,2023,1.5
+Central African Republic,caf,2023,3
+Chad,tcd,2023,3.4
+Chile,chl,2023,-1
+Colombia,col,2023,2.2
+Comoros,com,2023,3.4
+Costa Rica,cri,2023,2.9
+Croatia,hrv,2023,3.5
+Cyprus,cyp,2023,2.5
+Czech Republic,cze,2023,1.5
+Côte d'Ivoire,civ,2023,6.5
+Denmark,dnk,2023,0.6
+Djibouti,dji,2023,5
+Dominica,dma,2023,4.9
+Dominican Republic,dom,2023,4.5
+Ecuador,ecu,2023,2.7
+Egypt,egy,2023,4.4
+El Salvador,slv,2023,1.7
+Equatorial Guinea,gnq,2023,-3.1
+Eritrea,eri,2023,2.8
+Estonia,est,2023,1.8
+Ethiopia,eth,2023,5.3
+Fiji,fji,2023,6.9
+Finland,fin,2023,0.5
+France,fra,2023,0.7
+Gabon,gab,2023,3.7
+Georgia,geo,2023,4
+Germany,deu,2023,-0.3
+Ghana,gha,2023,2.8
+Greece,grc,2023,1.8
+Grenada,grd,2023,3.6
+Guatemala,gtm,2023,3.2
+Guinea,gin,2023,5.1
+Guinea-Bissau,gnb,2023,4.5
+Guyana,guy,2023,25.2
+Haiti,hti,2023,0.5
+Honduras,hnd,2023,3.5
+Hungary,hun,2023,1.8
+Iceland,isl,2023,2.9
+India,ind,2023,6.1
+Indonesia,idn,2023,5
+Iraq,irq,2023,4
+Ireland,irl,2023,4
+Israel,isr,2023,3
+Italy,ita,2023,-0.2
+Jamaica,jam,2023,3
+Japan,jpn,2023,1.6
+Jordan,jor,2023,2.7
+Kazakhstan,kaz,2023,4.4
+Kenya,ken,2023,5.1
+Kiribati,kir,2023,2.4
+"Korea, Republic of",kor,2023,2
+Kuwait,kwt,2023,2.6
+Latvia,lva,2023,1.6
+Lebanon,lbn,2023,no data
+Lesotho,lso,2023,1.6
+Liberia,lbr,2023,4.2
+Libya,lby,2023,17.9
+Lithuania,ltu,2023,1.1
+Luxembourg,lux,2023,1.1
+Madagascar,mdg,2023,5.2
+Malawi,mwi,2023,2.5
+Malaysia,mys,2023,4.4
+Maldives,mdv,2023,6.1
+Mali,mli,2023,5.3
+Malta,mlt,2023,3.3
+Marshall Islands,mhl,2023,3.2
+Mauritania,mrt,2023,4.8
+Mauritius,mus,2023,5.4
+Mexico,mex,2023,1.2
+Mongolia,mng,2023,5
+Montenegro,mne,2023,2.5
+Morocco,mar,2023,3.1
+Mozambique,moz,2023,4.9
+Myanmar,mmr,2023,3.3
+Namibia,nam,2023,3.2
+Nauru,nru,2023,2
+Nepal,npl,2023,5
+Netherlands,nld,2023,0.8
+New Zealand,nzl,2023,1.9
+Nicaragua,nic,2023,3
+Niger,ner,2023,7.3
+Nigeria,nga,2023,3
+Norway,nor,2023,2.6
+Oman,omn,2023,4.1
+Pakistan,pak,2023,3.5
+Palau,plw,2023,12.3
+Panama,pan,2023,4
+Papua New Guinea,png,2023,5.1
+Paraguay,pry,2023,4.3
+Peru,per,2023,2.6
+Philippines,phl,2023,5
+Poland,pol,2023,0.5
+Portugal,prt,2023,0.7
+Puerto Rico,pri,2023,0.4
+Qatar,qat,2023,2.4
+Romania,rou,2023,3.1
+Russian Federation,rus,2023,-2.3
+Rwanda,rwa,2023,6.7
+Saint Kitts and Nevis,kna,2023,4.8
+Saint Lucia,lca,2023,5.8
+Saint Vincent and the Grenadines,vct,2023,6
+Samoa,wsm,2023,4
+San Marino,smr,2023,0.8
+Saudi Arabia,sau,2023,3.7
+Senegal,sen,2023,8.1
+Serbia,srb,2023,2.7
+Seychelles,syc,2023,5.2
+Sierra Leone,sle,2023,3.3
+Singapore,sgp,2023,2.3
+Slovenia,svn,2023,1.7
+Solomon Islands,slb,2023,2.6
+Somalia,som,2023,3.1
+South Africa,zaf,2023,1.1
+Spain,esp,2023,1.2
+Sri Lanka,lka,2023,-3
+Sudan,sdn,2023,2.6
+Suriname,sur,2023,2.3
+Sweden,swe,2023,-0.1
+Switzerland,che,2023,0.8
+Tajikistan,tjk,2023,4
+Thailand,tha,2023,3.7
+Timor-Leste,tls,2023,4.2
+Togo,tgo,2023,6.2
+Tonga,ton,2023,2.9
+Trinidad and Tobago,tto,2023,3.5
+Tunisia,tun,2023,1.6
+Turkmenistan,tkm,2023,2.3
+Tuvalu,tuv,2023,3.5
+Uganda,uga,2023,5.9
+Ukraine,ukr,2023,no data
+United Arab Emirates,are,2023,4.2
+United Kingdom,gbr,2023,0.3
+United States,usa,2023,1
+Uruguay,ury,2023,3.6
+Uzbekistan,uzb,2023,4.7
+Vanuatu,vut,2023,3.1
+Yemen,yem,2023,3.2
+Zambia,zmb,2023,4
+Zimbabwe,zwe,2023,2.8

@@ -1,4 +1,11 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "title": {
+    "text": "2023 GDP Forecast",
+    "subtitle": "Source: OECD and IMF",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"},
 
 "width":600,
 "height":300,

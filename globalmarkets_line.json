@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-      "text": "Global markets",
+      "text": "Global market indexes",
       "fontSize": 18,
       "anchor": "start",
-      "subtitle": "Box plot of spot exchange rate, USD$ into Sterling from 25 July - 19 December 2022",
+      "subtitle": "Comparison of indexes. Measured by market close in respective currencies. Source: Yahoo! finance ",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "color": "black"
@@ -25,9 +25,9 @@
 }},
     "y": {"field": "Close", "type": "quantitative",
     "axis":{
-      "grid": false
+      "grid": false,"titleFontWeight":"normal"
     }},
-    "color": {"field": "Name", "type": "nominal"}},
+    "color": {"field": "Name", "type": "nominal", "title":"Index"}},
             "config": {
     "view": {
       "stroke": "transparent"

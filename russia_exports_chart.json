@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Exports of Goods and Services in Russia",
+      "fontSize": 18,
+      "anchor": "start",
+      "subtitle": "Total Russian exports from 2020-2022 Q2. Source: Bank of Russia",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "color": "black"
+    },
+
+    "width": 300,
+    "height": 300,
+    "data": {"url": "https://raw.githubusercontent.com/su20332/su20332.github.io/main/russia_balance_of_payments.csv"},
+
+    "transform": [{"calculate":"replace(datum.YQ, '-Q1', '-01')", "as":"date1"},
+    {"calculate":"replace(datum.date1, '-Q2', '-04')", "as":"date2"},
+    {"calculate":"replace(datum.date2, '-Q3', '-07')", "as":"date3"},
+    {"calculate":"replace(datum.date3, '-Q4', '-10')", "as":"date4"},
+
+        {"calculate":"timeParse(datum.date4, '%Y-%m')", "as": "dateClean"}],
+
+
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "type": "temporal", "field": "dateClean",
+        "title":null,
+      "axis": {
+        "labelExpr": "[timeFormat(datum.value, '%b'), timeFormat(datum.value, '%m') == '01' ? timeFormat(datum.value, '%Y') : '']",
+        "grid": false, "ticks": false
+      
+        }
+  
+      },
+      "y": {
+        "type": "quantitative", "field": "Exports",
+        "title": "Billions of US dollars",
+          "axis": { 
+        "domain": true, "grid": false, "ticks": true}
+      }
+    },
+      "config": {
+    "view": {
+        "stroke": "transparent"}}
+  }
+  

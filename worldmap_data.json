@@ -1,0 +1,59 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+"width":600,
+"height":300,
+
+
+
+"data":{
+  "url":"https://raw.githubusercontent.com/su20332/su20332.github.io/main/worldmap.json",
+  "format":{
+    "type":"topojson",
+    "feature":"countries"
+  }
+},
+
+"transform": [
+  {"calculate":"parseInt(datum.id)", "as":"id_N"},
+  {
+  "lookup":"id_N",
+  "from":{"key":"id",
+  "fields": ["alpha3", "name"],
+  "data":{"url":"https://raw.githubusercontent.com/su20332/su20332.github.io/main/data_worldcountrynamesID.json"}}
+  },
+ 
+  
+
+
+  {"lookup": "alpha3",
+  "from":{"key": "Code",
+  "fields": ["Real GDP growth (annual %)"],
+  "data":{"url":
+  "https://raw.githubusercontent.com/su20332/su20332.github.io/main/2023GDPforecast_IMFcleandata.csv"}}}
+  ],
+ 
+
+
+
+"projection":{
+  "type":"naturalEarth1"},
+
+"mark":{
+  "type":"geoshape"
+},
+"encoding": {
+    "color": {
+      "field": "Real GDP growth (annual %)",
+      "type": "quantitative",
+       "scale":{
+        "domain":[-2.5,15],
+        "scheme":"darkred"},
+      "legend":{
+        "orient": "bottom",
+        "direction": "horizontal"}
+    },
+    "tooltip":[{"field":"name", "type":"nominal", "title":"Country"},
+    {"field":"Real GDP growth (annual %)", "type":"quantitative"}]
+    
+}
+}

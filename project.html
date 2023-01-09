@@ -37,29 +37,29 @@
         
         <h2>Strength of currency</h2>  
         
-        <div class="chart1" id="Vis1"></div>
+        <div class="Chart1" id="Vis1"></div>
         
 
         <h2>Comparison of market indexes</h2>
         
 
-        <div class="chart" id="Vis2"></div>
+        <div class="Chart1" id="Vis2"></div>
     
     
 
     <div class="myWeek">
 
         <h2>Foreign Investment</h2>
-        <div class="chart" id="Vis3"></div>
+        <div class="Chart1" id="Vis3"></div>
     </div>
         
         <h2>Trade</h2>
-        <div class="chart" id="Vis4"></div>
+        <div class="Chart1" id="Vis4"></div>
         
-        <div class="chart" id="Vis5"></div>
+        <div class="Chart1" id="Vis5"></div>
 
         <h2>2023 GDP forecast</h2>
-        <div class="chart" id="Vis6"></div>
+        <div class="Chart1" id="Vis6"></div>
         
         <h2>Data</h2>
         <p>I accessed the data for the real broad effective exchange rate for Russia from FRED. It was downloaded from their API using <a
@@ -71,7 +71,7 @@
 
         <p>To access the OCED and IMF data on FDI inward flows I downloaded the data in csv files. I had to read the csv with encoding='latin 1'.</p>
 
-        <p>To access the balance of payments data, I scraped data*hyperlink* using tabula from a PDF. This was a PDF published by the Bank of Russia. The data was in an unstructured form so I followed this helpful <a href="https://towardsdatascience.com/scrape-data-from-pdf-files-using-python-fe2dc96b1e68"id=link1>website</a> to create the DataFrame.</p>  
+        <p>To access the balance of payments data, I <a href="https://colab.research.google.com/drive/1P5X4WEpviLhxcoNXRpADDODFLUI8OpAU?usp=sharing"id=link1>scraped data</a> using tabula from a PDF. This was a PDF published by the Bank of Russia. The data was in an unstructured form so I followed this helpful <a href="https://towardsdatascience.com/scrape-data-from-pdf-files-using-python-fe2dc96b1e68"id=link1>website</a> to create the DataFrame.</p>  
         
         <p>I downloaded GDP forecast data from IMF. I only incorporated 2023 data because it would be the most accurate. I also removed historical data because it has limited relation to the economic sanctions on Russia.</p>
 
@@ -80,7 +80,7 @@
         
         <p>Firstly, I manually pasted the years where values were missing because it was the most efficient method. I downloaded the csv file into <a href="https://colab.research.google.com/drive/15xzD8Vl2Rx3sQQjhYOPOon51ewrV5o7a?usp=sharing"id=link1>Google colab</a> (using python) to clean the data. As I was only interested in quarterly data, I used a multiIndex. I followed this helpful <a href="https://stackoverflow.com/questions/55676949/how-to-make-first-row-turn-into-second-level-multiindex"id=link1>webpage.</a></p>
 
-        <p>After scraping the PDF, some values were slightly incorrect so I changed the values manually in python*Colab*. I knew Vega-Lite would be unable to read the date just by quarters so added a new column combining the year and quarter so Vega-Lite could read it as temporal data.</p>
+        <p>After scraping the PDF, some values were slightly incorrect so I changed the values manually in <a href="https://colab.research.google.com/drive/1P5X4WEpviLhxcoNXRpADDODFLUI8OpAU?usp=sharing"id=link1>python.</a> I knew Vega-Lite would be unable to read the date just by quarters so added a new column combining the year and quarter so Vega-Lite could read it as temporal data.</p>
 
         <p>Unfortunately, not all the country names matched so some countries disappeared from the world map. To overcome this, I matched countries on ‘alpha3’ codes rather than names. In <a href="https://colab.research.google.com/drive/13PhQStNDfXwTmarmx8OJFxZo5U_sVb_X?usp=sharing"id=link1>colab</a> I first had to change downloaded country codes to lower case so it would match to the other dataset.</p>
 

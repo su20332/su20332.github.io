@@ -24,7 +24,7 @@
 <body>
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
     <div class="myWeek">
-        <h1>Data Science for Economists</h1>
+        <h1>My Portfolio</h1>
 
         <h1>Week 1</h1>
         <p>The first chart compares the price change of goods against services.</p>
@@ -57,7 +57,7 @@
 
         <h3></h3>
         <div class="chart" id="Vis6"></div>
-        <p>sdgbnsvkfdbkl</p>
+        <p>The second chart is a box plot. This shows the spot exchange rate over time showing peaks, troughs and average. The median removes any outliers.</p>
 
     </div>
 
@@ -89,10 +89,14 @@
         <h1>Week 7</h1>
         <div class="chart" id="Vis17"></div>
         <div class="chart" id="Vis18"></div>
+    <p>The chart above shows a map of Northern Ireland, split by Westminster parliamentary constituencies, with anti-social behaviour incident data overlayed on top.</p>    
     </div>
 
     <div class="myWeek">
         <h1>Week 8</h1>
+        <p>Huw Pill argued that it is imperative that the Bank of England remains independent and solely focusses on its mandate of price stability.</p>
+        <div class="chart" id="Vis19"></div>
+        <p>I agree that the Bank of England must remain independent. Turkey’s central bank is not independent from its government and struggles to maintain price stability.</p>
     </div>
 
 </body>
@@ -118,6 +122,7 @@
     var myChart16 = "south_west_england_unemployment.json";
     var myChart17 = "northern_ireland_base_map.json";
     var myChart18 = "northern_ireland_map_with_data.json";
+    var myChart19 = "inflation_UK_Turkey.json";
 
 
     // Embed charts:
@@ -139,6 +144,7 @@
     vegaEmbed('#Vis16', myChart16);
     vegaEmbed('#Vis17', myChart17);
     vegaEmbed('#Vis18', myChart18);
+    vegaEmbed('#Vis19', myChart19);
 
 
 

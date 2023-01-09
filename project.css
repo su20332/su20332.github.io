@@ -23,21 +23,29 @@ h1, h2, h3, p{
 }
 
 .Chart1{
-    /* margin: auto; */
-    /* max-width: 600px; */
-    width: 750px;
+    margin: auto;
+    max-width: 1000px;
+    
     background-color: white;
 
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
     border-color: black;
+    text-align: center;
+    /* background-color: white;
+    max-width: px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #4484CE;
+    display: block;
     margin: 0px 125px 0px 125px;
+    align-items: center; */
 }
 
 .myWeek{
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     background-color: #FFF1E0;
 
     border-width: 3px;
